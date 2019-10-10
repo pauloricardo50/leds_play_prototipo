@@ -1,4 +1,4 @@
-# Ionic Angular Conference Application
+# Ionic Angular Conference Application - MATERIAL DE AUXILIO DO INICIAL DO IONIC
 
 This application is purely a kitchen-sink demo of the Ionic Framework and Angular.
 
