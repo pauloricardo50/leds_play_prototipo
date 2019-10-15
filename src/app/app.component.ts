@@ -30,15 +30,16 @@ export class AppComponent implements OnInit {
       icon: 'contacts'
     },
     {
-      title: 'Map',
+      title: 'Cadastrar Tarefas',
       url: '/app/tabs/map',
-      icon: 'map'
+      icon: 'add-circle'
     },
     {
       title: 'About',
       url: '/app/tabs/about',
       icon: 'information-circle'
     }
+    
   ];
   loggedIn = false;
   dark = false;
@@ -114,7 +115,7 @@ export class AppComponent implements OnInit {
 
   logout() {
     this.userData.logout().then(() => {
-      return this.router.navigateByUrl('/app/tabs/schedule');
+      return this.router.navigateByUrl('/app/pages/login');
     });
   }
 

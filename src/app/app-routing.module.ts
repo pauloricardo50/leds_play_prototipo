@@ -32,7 +32,8 @@ const routes: Routes = [
     path: 'tutorial',
     loadChildren: () => import('./pages/tutorial/tutorial.module').then(m => m.TutorialModule),
     canLoad: [CheckTutorial]
-  },  { path: 'cad-tarefas', loadChildren: './cad-tarefas/cad-tarefas.module#CadTarefasPageModule' }
+  },
+  { path: 'cad-tarefas', loadChildren: './cad-tarefas/cad-tarefas.module#CadTarefasPageModule' }
 
 ];
 
