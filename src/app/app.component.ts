@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
       icon: 'add-circle'
     },
     {
-      title: 'About',
+      title: 'Jornada',
       url: '/app/tabs/about',
       icon: 'information-circle'
     }
