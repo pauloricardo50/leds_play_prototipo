@@ -3,6 +3,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 
 import { PopoverPage } from '../about-popover/about-popover';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'page-about',
@@ -11,8 +12,8 @@ import { PopoverPage } from '../about-popover/about-popover';
 })
 export class AboutPage {
   conferenceDate = '2047-05-17';
-
-  constructor(public popoverCtrl: PopoverController) { }
+  itens = ["YOUNGLING", "Objetivos", "Absorver", "Especificação", "Modelagem", "Construção", "Teste", "Desafio", "Replicar"]
+  constructor(public router: Router, public popoverCtrl: PopoverController) { }
 
   async presentPopover(event: Event) {
     const popover = await this.popoverCtrl.create({
@@ -20,5 +21,9 @@ export class AboutPage {
       event
     });
     await popover.present();
+  }
+  proximaPagina() {
+    this.router.navigateByUrl('/schedule');
+
   }
 }

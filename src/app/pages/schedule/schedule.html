@@ -29,9 +29,9 @@
     </ion-buttons>
   </ion-toolbar>
 
-  <ion-toolbar>
+  <!--<ion-toolbar>
     <ion-searchbar [(ngModel)]="queryText" (ionChange)="updateSchedule()" placeholder="Search"></ion-searchbar>
-  </ion-toolbar>
+  </ion-toolbar>-->
 </ion-header>
 
 <ion-content>
@@ -40,28 +40,29 @@
       </ion-header>
       <ion-content fullscreen>
         <ion-list>
-          <ion-list-header>Tarefas a fazer</ion-list-header>
+          <ion-list-header>Youngling</ion-list-header>
+          <ion-list-header>Modelagem</ion-list-header>
             <ion-item>
-              <ion-label>Realizar a analise do sistema</ion-label>
+              <ion-label>Conseguir prototipar telas de usuário</ion-label>
               <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
             </ion-item>
             <ion-item>
               <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
-              <ion-label>Levantar requisitos</ion-label>
+              <ion-label>Conseguir simular a execução do sistema</ion-label>
             </ion-item>
             <ion-item>
               <ion-checkbox color="primary" slot="start"></ion-checkbox>
-              <ion-label>Documentar Requisitos</ion-label>
+              <ion-label>Conseguir apresentar e explicar telas de usuário e clientes</ion-label>
             </ion-item>
             <ion-item>
               <ion-checkbox color="primary" slot="start"></ion-checkbox>
-              <ion-label>Elaborar Casos de Uso</ion-label>
+              <ion-label>Conseguir elaborar modelos de classes ou entidades e relacionamento</ion-label>
             </ion-item>
             <ion-item>
               <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
-              <ion-label>Elaborar Diagrama de Classes</ion-label>
+              <ion-label>descrever arquitetura do sistema</ion-label>
             </ion-item>
-            <ion-item>
+            <!--<ion-item>
               <ion-checkbox color="primary" slot="start"></ion-checkbox>
               <ion-label>Validar Diagramas</ion-label>
             </ion-item>
@@ -88,7 +89,7 @@
             <ion-item>
               <ion-checkbox color="tertiary" checked slot="start"></ion-checkbox>
               <ion-label>Corrigir</ion-label>
-            </ion-item>
+            </ion-item>-->
           </ion-list>
       </ion-content>
     </ion-app>
