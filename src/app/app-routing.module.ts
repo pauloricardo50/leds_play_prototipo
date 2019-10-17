@@ -11,6 +11,9 @@ const routes: Routes = [
   {
     path: 'account',
     loadChildren: () => import('./pages/account/account.module').then(m => m.AccountModule)
+  },{
+    path: 'schedule',
+    loadChildren: () => import('./pages/schedule/schedule.module').then(m => m.ScheduleModule)
   },
   {
     path: 'support',

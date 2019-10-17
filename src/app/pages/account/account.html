@@ -12,12 +12,30 @@
     <img src="https://www.gravatar.com/avatar?d=mm&s=140" alt="avatar">
     <h2>{{username}}</h2>
 
-    <ion-list inset>
-      <ion-item (click)="updatePicture()">Update Picture</ion-item>
-      <ion-item (click)="changeUsername()">Change Username</ion-item>
-      <ion-item (click)="changePassword()">Change Password</ion-item>
+    <div class="info">
+      <h3>XP 8000/9000</h3>
+      <h3>YOUNGLING</h3>
+    </div>
+
+    <!--<ion-list inset>
+      <ion-item (click)="updatePicture()">Atualizar Imagem</ion-item>
+      <ion-item (click)="changeUsername()">Trocar Usuário</ion-item>
+      <ion-item (click)="changePassword()">Trocar Senha</ion-item>
       <ion-item (click)="support()">Support</ion-item>
       <ion-item (click)="logout()">Logout</ion-item>
-    </ion-list>
+    </ion-list>-->
   </div>
+
+  <section class="ion-padding-top ion-text-center">
+    <!--<header>Small Size</header>-->
+    <div>
+      <ion-button class="botoes">Jornada</ion-button>
+      <ion-button class="botoes">Desafios</ion-button>
+    </div>
+    <div>
+      <ion-button class="botoes">Ranking</ion-button>
+      <ion-button class="botoes">Mapa Geral</ion-button>
+    </div>
+  </section>
+
 </ion-content>
